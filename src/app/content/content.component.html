@@ -4,7 +4,8 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Starter Page</h1>
+            <h1 class="m-0 text-dark">{{pageTitle}}</h1>
+            <small>{{pageDesc}}</small>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -23,7 +24,8 @@
         <!-- <div class="row"> -->
           <!-- <div class="col-lg-6"> -->
             
-            <app-stock-manage></app-stock-manage>
+            <router-outlet></router-outlet>
+            
 
             <!-- <div class="card card-primary card-outline">
               <div class="card-body">
